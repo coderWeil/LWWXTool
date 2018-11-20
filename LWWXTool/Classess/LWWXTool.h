@@ -8,8 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import <WXApi.h>
-#import <WXApiObject.h>
+
 
 typedef NS_ENUM(NSUInteger, LWWXToolType) {
     LWWXToolTypeNoneInstall,//未安装
@@ -21,7 +20,7 @@ typedef NS_ENUM(NSUInteger, LWWXToolType) {
 
 
 typedef void(^LWWXToolCompletionHandler)(LWWXToolType type,_Nullable id value);
-@interface LWWXTool : NSObject<WXApiDelegate>
+@interface LWWXTool : NSObject
 //单例模式
 + (instancetype)sharedManager;
 //向微信注册

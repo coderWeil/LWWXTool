@@ -8,8 +8,10 @@
 
 #import "LWWXTool.h"
 #import "UIImage+ResizeImage.h"
+#import <WXApi.h>
+#import <WXApiObject.h>
 
-@interface LWWXTool ()
+@interface LWWXTool ()<WXApiDelegate>
 @property (nonatomic,copy) LWWXToolCompletionHandler completionHandler;
 @end
 
