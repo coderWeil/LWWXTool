@@ -23,17 +23,33 @@
     });
     return tool;
 }
++ (BOOL)lw_registerApp:(NSString *)appId enableMTA:(BOOL)enable {
+    return [WXApi registerApp:appId enableMTA:enable];
+}
+
++ (BOOL)lw_handleOpenURL:(NSURL *)url {
+    return [WXApi handleOpenURL:url delegate:[LWWXTool sharedManager]];
+}
+
+//是否安装微信
++ (BOOL)lw_isWXInstalled {
+    return [WXApi isWXAppInstalled];
+}
+//是否支持微信
++ (BOOL)lw_isWXSupported {
+    return [WXApi isWXAppSupportApi];
+}
 
 + (void)startWxPay:(NSString *)partnertId prePayId:(NSString *)prePay_id sign:(NSString *)sign timestamp:(NSString *)timestamp nonceStr:(NSString *)nonceStr package:(NSString *)package appId:(NSString *)appId completionHandler:(LWWXToolCompletionHandler)completionHandler {
     [LWWXTool sharedManager].completionHandler = completionHandler;
-    if (![WXApi isWXAppInstalled]) {
+    if (![self lw_isWXInstalled]) {
         if (completionHandler) {
             completionHandler(LWWXToolTypeNoneInstall,nil);
         }
         return;
     }
     
-    if (![WXApi isWXAppSupportApi]) {
+    if (![self lw_isWXSupported]) {
         if (completionHandler) {
             completionHandler(LWWXToolTypeNoSupport,nil);
         }
@@ -62,9 +78,16 @@
 
 + (void)weixinShare:(NSString *)shareTitle shareDesc:(NSString *)shareDesc shareImage:(UIImage *)shareImage shareLink:(NSString *)shareLink completionHandler:(LWWXToolCompletionHandler)completionHandler {
     [LWWXTool sharedManager].completionHandler = completionHandler;
-    if (![WXApi isWXAppInstalled]) {
+    if (![self lw_isWXInstalled]) {
         if (completionHandler) {
             completionHandler(LWWXToolTypeNoneInstall,nil);
+        }
+        return;
+    }
+    
+    if (![self lw_isWXSupported]) {
+        if (completionHandler) {
+            completionHandler(LWWXToolTypeNoSupport,nil);
         }
         return;
     }
@@ -92,9 +115,16 @@
 
 + (void)timelineShare:(NSString *)shareTitle shareDesc:(NSString *)shareDesc shareImage:(UIImage *)shareImage shareLink:(NSString *)shareLink completionHandler:(LWWXToolCompletionHandler)completionHandler {
     [LWWXTool sharedManager].completionHandler = completionHandler;
-    if (![WXApi isWXAppInstalled]) {
+    if (![self lw_isWXInstalled]) {
         if (completionHandler) {
             completionHandler(LWWXToolTypeNoneInstall,nil);
+        }
+        return;
+    }
+    
+    if (![self lw_isWXSupported]) {
+        if (completionHandler) {
+            completionHandler(LWWXToolTypeNoSupport,nil);
         }
         return;
     }

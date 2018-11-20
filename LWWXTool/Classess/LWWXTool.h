@@ -24,6 +24,14 @@ typedef void(^LWWXToolCompletionHandler)(LWWXToolType type,_Nullable id value);
 @interface LWWXTool : NSObject<WXApiDelegate>
 //单例模式
 + (instancetype)sharedManager;
+//向微信注册
++ (BOOL)lw_registerApp:(NSString *)appId enableMTA:(BOOL)enable;
+//是否允许app打开微信
++ (BOOL)lw_handleOpenURL:(NSURL *)url;
+//是否安装微信
++ (BOOL)lw_isWXInstalled;
+//是否支持微信
++ (BOOL)lw_isWXSupported;
 //微信支付
 + (void)startWxPay:(NSString *)partnertId prePayId:(NSString *)prePay_id sign:(NSString *)sign timestamp:(NSString *)timestamp nonceStr:(NSString *)nonceStr package:(NSString *)package appId:(NSString *)appId completionHandler:(LWWXToolCompletionHandler)completionHandler;
 //微信登录

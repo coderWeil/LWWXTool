@@ -4,6 +4,36 @@
 
 #### 调用：
 
+> 向微信注册：
+
+```
+//向微信注册
++ (BOOL)lw_registerApp:(NSString *)appId enableMTA:(BOOL)enable;
+
+```
+
+> 是否允许打开微信（app打开微信）
+
+```
+//是否允许app打开微信
++ (BOOL)lw_handleOpenURL:(NSURL *)url;
+
+```
+> 是否安装了微信
+
+```
+//是否安装微信
++ (BOOL)lw_isWXInstalled;
+
+```
+
+> 是否支持微信
+
+```
+//是否支持微信
++ (BOOL)lw_isWXSupported;
+```
+
 > 登录注册：
 
 ```
