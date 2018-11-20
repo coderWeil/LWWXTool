@@ -1,16 +1,20 @@
 PODS:
+  - LWWXTool (0.0.2):
+    - WechatOpenSDK
   - WechatOpenSDK (1.8.3)
 
 DEPENDENCIES:
-  - WechatOpenSDK
+  - LWWXTool
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - LWWXTool
     - WechatOpenSDK
 
 SPEC CHECKSUMS:
+  LWWXTool: f3939fe9417986a3a407281414ad7c731922f125
   WechatOpenSDK: 3117412f8aafde4758cac1e8d20b93c67cafcfef
 
-PODFILE CHECKSUM: 63c1409f4e693b103c767eed0936b2daabff2714
+PODFILE CHECKSUM: 11b699edf3e3e2098602c05c2b258d04b8c63366
 
 COCOAPODS: 1.5.3

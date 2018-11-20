@@ -7,27 +7,63 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2F196C98EAAF30DA421C0B47030E224B /* Pods-LWWXToolDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 94B43740B6ECDC2AF4DDC8BF8A33C55A /* Pods-LWWXToolDemo-dummy.m */; };
+		1BA7F388F2E7466CDA8294BA29A34047 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 908E902E026C5C22904CF9014A5604AD /* Foundation.framework */; };
+		351D22FAE0A7CA896D46D98704ED7CAF /* Pods-LWWXToolDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 94B43740B6ECDC2AF4DDC8BF8A33C55A /* Pods-LWWXToolDemo-dummy.m */; };
+		363885A907DB89A0E3C5713C91749EE0 /* UIImage+ResizeImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F926E29A4FAC17F43CAC66B815BC8DE /* UIImage+ResizeImage.m */; };
+		3CB3187F94DEDBDCF769168AA660DA7F /* LWWXTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 803925419B5AC075F8F46EE4E3EA8B0A /* LWWXTool.m */; };
+		3E5DE77F10CBBE88029D618436159891 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC2C02191C153C1554B35DEE8B2D09D4 /* UIKit.framework */; };
+		3E90BE3733809C31A495E4EE97368C89 /* LWWXTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 065C28AFAFDC7F6B0A6715A52788AA4E /* LWWXTool.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A63599316641FD6E10EDE6F1FCE7F435 /* UIImage+ResizeImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 7086686ADF12F8734AAE1C2E7C565DF8 /* UIImage+ResizeImage.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E7E91DBBD4E23CCD0BC3EDEEA1E65BE9 /* LWWXTool-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EB498210E7EFE401447AD1B34394F2BD /* LWWXTool-dummy.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		2EE543B63A89008D4238745F8B6E9B3B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C90FCF2DABEB85F65BE4176AD405BD4D;
+			remoteInfo = LWWXTool;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		0785FBE2B0F16BBFCA8B5D142C2570B2 /* WechatAuthSDK.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WechatAuthSDK.h; path = WeChatSDK1.8.3/WechatAuthSDK.h; sourceTree = "<group>"; };
+		065C28AFAFDC7F6B0A6715A52788AA4E /* LWWXTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LWWXTool.h; path = LWWXTool/Classess/LWWXTool.h; sourceTree = "<group>"; };
+		0FE0D0DB88E8B843355EEB74ADF5C44B /* WXApiObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WXApiObject.h; path = WeChatSDK1.8.3/WXApiObject.h; sourceTree = "<group>"; };
+		1BF9EFA5044E22C3AAD903E3ACD8A4C4 /* WechatAuthSDK.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WechatAuthSDK.h; path = WeChatSDK1.8.3/WechatAuthSDK.h; sourceTree = "<group>"; };
 		1D25663E52D4BACE59DDB53A3944ECCF /* Pods-LWWXToolDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LWWXToolDemo.release.xcconfig"; sourceTree = "<group>"; };
-		29714C42934F945D90E04DA072BD2865 /* libPods-LWWXToolDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-LWWXToolDemo.a"; path = "libPods-LWWXToolDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		208698BE1CD364476AF2B79F67B313E3 /* libPods-LWWXToolDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-LWWXToolDemo.a"; path = "libPods-LWWXToolDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		40515CB4059CE8EDF3EA4739B42FA060 /* libLWWXTool.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libLWWXTool.a; path = libLWWXTool.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F926E29A4FAC17F43CAC66B815BC8DE /* UIImage+ResizeImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+ResizeImage.m"; path = "LWWXTool/Classess/UIImage+ResizeImage.m"; sourceTree = "<group>"; };
+		56FA594CC9F1DDC5AC50EBC9FE7B630E /* libWeChatSDK.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libWeChatSDK.a; path = WeChatSDK1.8.3/libWeChatSDK.a; sourceTree = "<group>"; };
 		5956F2C952F72C513391A0585A84EE41 /* Pods-LWWXToolDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LWWXToolDemo-frameworks.sh"; sourceTree = "<group>"; };
 		5BAA2FDF7244303368D6833CAA8E0559 /* Pods-LWWXToolDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LWWXToolDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		5C2988702DEBDC35B445CFAF429C4AB9 /* Pods-LWWXToolDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LWWXToolDemo-acknowledgements.plist"; sourceTree = "<group>"; };
+		7086686ADF12F8734AAE1C2E7C565DF8 /* UIImage+ResizeImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+ResizeImage.h"; path = "LWWXTool/Classess/UIImage+ResizeImage.h"; sourceTree = "<group>"; };
+		803925419B5AC075F8F46EE4E3EA8B0A /* LWWXTool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LWWXTool.m; path = LWWXTool/Classess/LWWXTool.m; sourceTree = "<group>"; };
+		8B6AC3E3D15E205A218C800DB88C8D0C /* WXApi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WXApi.h; path = WeChatSDK1.8.3/WXApi.h; sourceTree = "<group>"; };
+		908E902E026C5C22904CF9014A5604AD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		94B43740B6ECDC2AF4DDC8BF8A33C55A /* Pods-LWWXToolDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LWWXToolDemo-dummy.m"; sourceTree = "<group>"; };
+		9A947F5AFEE885AAE1290FC99826767B /* LWWXTool.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LWWXTool.xcconfig; sourceTree = "<group>"; };
 		B238602955B8306829D71EB2B45887D1 /* Pods-LWWXToolDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LWWXToolDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
-		DF6F48A794D5A5C6D096B964C6BFE1A7 /* WXApiObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WXApiObject.h; path = WeChatSDK1.8.3/WXApiObject.h; sourceTree = "<group>"; };
+		BC2C02191C153C1554B35DEE8B2D09D4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		CDCD090CD6C6F9B9F7BF2D265038A07D /* LWWXTool-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LWWXTool-prefix.pch"; sourceTree = "<group>"; };
+		EB498210E7EFE401447AD1B34394F2BD /* LWWXTool-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LWWXTool-dummy.m"; sourceTree = "<group>"; };
 		F1C4A86D6DB3E736B9B975A56E1D1A75 /* Pods-LWWXToolDemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LWWXToolDemo-resources.sh"; sourceTree = "<group>"; };
-		F38E869CA6BEA91EA9BEAF811640E960 /* WXApi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WXApi.h; path = WeChatSDK1.8.3/WXApi.h; sourceTree = "<group>"; };
-		F487EDDE613757E4E7EEE7D2423905A4 /* libWeChatSDK.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libWeChatSDK.a; path = WeChatSDK1.8.3/libWeChatSDK.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		10F8284AFB5CBCFD0450C1ECC1A0752C /* Frameworks */ = {
+		183AB7593755A8DAEFFE74CF142E99F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BA7F388F2E7466CDA8294BA29A34047 /* Foundation.framework in Frameworks */,
+				3E5DE77F10CBBE88029D618436159891 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23C273FCC978355B8DF222CB9B1EFB69 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -37,36 +73,56 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */ = {
+		04E0F5F8310A9C66C7B155287342BDB1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				56FA594CC9F1DDC5AC50EBC9FE7B630E /* libWeChatSDK.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		216EF5FAD31D60939E6DD792D38C8E9C /* Products */ = {
+		0E42ECB554159AC385CE82CE94EEC965 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				29714C42934F945D90E04DA072BD2865 /* libPods-LWWXToolDemo.a */,
+				40515CB4059CE8EDF3EA4739B42FA060 /* libLWWXTool.a */,
+				208698BE1CD364476AF2B79F67B313E3 /* libPods-LWWXToolDemo.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7ADA45F435BB210C822629C0D9B54295 /* Pods */ = {
+		10DEDCB394BAA0C7FEDEBE330207B074 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				B37557304B990AF0FE45AB23864CB362 /* WechatOpenSDK */,
+				908E902E026C5C22904CF9014A5604AD /* Foundation.framework */,
+				BC2C02191C153C1554B35DEE8B2D09D4 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		3698678B4FA13E232ECC53F8441C4694 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C809367556815D8B26AF3160AF3B1634 /* LWWXTool */,
+				BCC61B1123AC9D6FB71915082F87E5F1 /* WechatOpenSDK */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				10DEDCB394BAA0C7FEDEBE330207B074 /* iOS */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */,
-				7ADA45F435BB210C822629C0D9B54295 /* Pods */,
-				216EF5FAD31D60939E6DD792D38C8E9C /* Products */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				3698678B4FA13E232ECC53F8441C4694 /* Pods */,
+				0E42ECB554159AC385CE82CE94EEC965 /* Products */,
 				877923FA46388C0DB4A7382AEE06B4C4 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -79,24 +135,40 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		902D4538E1885C694BF2300B0971350F /* Frameworks */ = {
+		B5F30521361BBDF359E42AD788081B3A /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				F487EDDE613757E4E7EEE7D2423905A4 /* libWeChatSDK.a */,
+				9A947F5AFEE885AAE1290FC99826767B /* LWWXTool.xcconfig */,
+				EB498210E7EFE401447AD1B34394F2BD /* LWWXTool-dummy.m */,
+				CDCD090CD6C6F9B9F7BF2D265038A07D /* LWWXTool-prefix.pch */,
 			);
-			name = Frameworks;
+			name = "Support Files";
+			path = "../Target Support Files/LWWXTool";
 			sourceTree = "<group>";
 		};
-		B37557304B990AF0FE45AB23864CB362 /* WechatOpenSDK */ = {
+		BCC61B1123AC9D6FB71915082F87E5F1 /* WechatOpenSDK */ = {
 			isa = PBXGroup;
 			children = (
-				0785FBE2B0F16BBFCA8B5D142C2570B2 /* WechatAuthSDK.h */,
-				F38E869CA6BEA91EA9BEAF811640E960 /* WXApi.h */,
-				DF6F48A794D5A5C6D096B964C6BFE1A7 /* WXApiObject.h */,
-				902D4538E1885C694BF2300B0971350F /* Frameworks */,
+				1BF9EFA5044E22C3AAD903E3ACD8A4C4 /* WechatAuthSDK.h */,
+				8B6AC3E3D15E205A218C800DB88C8D0C /* WXApi.h */,
+				0FE0D0DB88E8B843355EEB74ADF5C44B /* WXApiObject.h */,
+				04E0F5F8310A9C66C7B155287342BDB1 /* Frameworks */,
 			);
 			name = WechatOpenSDK;
 			path = WechatOpenSDK;
+			sourceTree = "<group>";
+		};
+		C809367556815D8B26AF3160AF3B1634 /* LWWXTool */ = {
+			isa = PBXGroup;
+			children = (
+				065C28AFAFDC7F6B0A6715A52788AA4E /* LWWXTool.h */,
+				803925419B5AC075F8F46EE4E3EA8B0A /* LWWXTool.m */,
+				7086686ADF12F8734AAE1C2E7C565DF8 /* UIImage+ResizeImage.h */,
+				4F926E29A4FAC17F43CAC66B815BC8DE /* UIImage+ResizeImage.m */,
+				B5F30521361BBDF359E42AD788081B3A /* Support Files */,
+			);
+			name = LWWXTool;
+			path = LWWXTool;
 			sourceTree = "<group>";
 		};
 		E475A963CCD30A25FBA60FECA9E57775 /* Pods-LWWXToolDemo */ = {
@@ -116,21 +188,51 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		57367A611961874A41AE462A4A565C9D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E90BE3733809C31A495E4EE97368C89 /* LWWXTool.h in Headers */,
+				A63599316641FD6E10EDE6F1FCE7F435 /* UIImage+ResizeImage.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
-		8A1BFEF103616FA4326CC68CB135CE8A /* Pods-LWWXToolDemo */ = {
+		AD67D4C0C5192486D56AD6E8473DA7BF /* Pods-LWWXToolDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 95FBB26B14549D92EAFD0FE1808DBF3F /* Build configuration list for PBXNativeTarget "Pods-LWWXToolDemo" */;
+			buildConfigurationList = B4296890495C177DCBA15881C12C5167 /* Build configuration list for PBXNativeTarget "Pods-LWWXToolDemo" */;
 			buildPhases = (
-				BA6E129B47ED28CEA8DF96267AD35890 /* Sources */,
-				10F8284AFB5CBCFD0450C1ECC1A0752C /* Frameworks */,
+				8888D75F19ACBF230FC0F2A1D67EBBEF /* Sources */,
+				23C273FCC978355B8DF222CB9B1EFB69 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B0271685F0942213D586DE361A82F17B /* PBXTargetDependency */,
+			);
+			name = "Pods-LWWXToolDemo";
+			productName = "Pods-LWWXToolDemo";
+			productReference = 208698BE1CD364476AF2B79F67B313E3 /* libPods-LWWXToolDemo.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		C90FCF2DABEB85F65BE4176AD405BD4D /* LWWXTool */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0358B31E79DD183F1C4105DD826DB34A /* Build configuration list for PBXNativeTarget "LWWXTool" */;
+			buildPhases = (
+				696591554E313AEB22DF3C4D03E939B5 /* Sources */,
+				183AB7593755A8DAEFFE74CF142E99F3 /* Frameworks */,
+				57367A611961874A41AE462A4A565C9D /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Pods-LWWXToolDemo";
-			productName = "Pods-LWWXToolDemo";
-			productReference = 29714C42934F945D90E04DA072BD2865 /* libPods-LWWXToolDemo.a */;
+			name = LWWXTool;
+			productName = LWWXTool;
+			productReference = 40515CB4059CE8EDF3EA4739B42FA060 /* libLWWXTool.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -150,28 +252,72 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 216EF5FAD31D60939E6DD792D38C8E9C /* Products */;
+			productRefGroup = 0E42ECB554159AC385CE82CE94EEC965 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8A1BFEF103616FA4326CC68CB135CE8A /* Pods-LWWXToolDemo */,
+				C90FCF2DABEB85F65BE4176AD405BD4D /* LWWXTool */,
+				AD67D4C0C5192486D56AD6E8473DA7BF /* Pods-LWWXToolDemo */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		BA6E129B47ED28CEA8DF96267AD35890 /* Sources */ = {
+		696591554E313AEB22DF3C4D03E939B5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F196C98EAAF30DA421C0B47030E224B /* Pods-LWWXToolDemo-dummy.m in Sources */,
+				E7E91DBBD4E23CCD0BC3EDEEA1E65BE9 /* LWWXTool-dummy.m in Sources */,
+				3CB3187F94DEDBDCF769168AA660DA7F /* LWWXTool.m in Sources */,
+				363885A907DB89A0E3C5713C91749EE0 /* UIImage+ResizeImage.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8888D75F19ACBF230FC0F2A1D67EBBEF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				351D22FAE0A7CA896D46D98704ED7CAF /* Pods-LWWXToolDemo-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		B0271685F0942213D586DE361A82F17B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LWWXTool;
+			target = C90FCF2DABEB85F65BE4176AD405BD4D /* LWWXTool */;
+			targetProxy = 2EE543B63A89008D4238745F8B6E9B3B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
-		0EF69426F8B8A65232A706038AEA5319 /* Release */ = {
+		0A2407B08822B30CC6DA52686F07A8FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A947F5AFEE885AAE1290FC99826767B /* LWWXTool.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/LWWXTool/LWWXTool-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = LWWXTool;
+				PRODUCT_NAME = LWWXTool;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1C38DBA48C49BC27BF00440E28A13AE9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1D25663E52D4BACE59DDB53A3944ECCF /* Pods-LWWXToolDemo.release.xcconfig */;
 			buildSettings = {
@@ -256,7 +402,7 @@
 			};
 			name = Debug;
 		};
-		BE6A94DE6717C3BC663775F56A4FDC04 /* Debug */ = {
+		2BFE1A69C00BD7F82F910C3FE3BD99AF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5BAA2FDF7244303368D6833CAA8E0559 /* Pods-LWWXToolDemo.debug.xcconfig */;
 			buildSettings = {
@@ -273,6 +419,29 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7AE7D926D17A896225E2817BC4E458B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A947F5AFEE885AAE1290FC99826767B /* LWWXTool.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/LWWXTool/LWWXTool-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = LWWXTool;
+				PRODUCT_NAME = LWWXTool;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -338,6 +507,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0358B31E79DD183F1C4105DD826DB34A /* Build configuration list for PBXNativeTarget "LWWXTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7AE7D926D17A896225E2817BC4E458B5 /* Debug */,
+				0A2407B08822B30CC6DA52686F07A8FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -347,11 +525,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		95FBB26B14549D92EAFD0FE1808DBF3F /* Build configuration list for PBXNativeTarget "Pods-LWWXToolDemo" */ = {
+		B4296890495C177DCBA15881C12C5167 /* Build configuration list for PBXNativeTarget "Pods-LWWXToolDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BE6A94DE6717C3BC663775F56A4FDC04 /* Debug */,
-				0EF69426F8B8A65232A706038AEA5319 /* Release */,
+				2BFE1A69C00BD7F82F910C3FE3BD99AF /* Debug */,
+				1C38DBA48C49BC27BF00440E28A13AE9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
