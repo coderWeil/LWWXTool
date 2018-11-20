@@ -13,8 +13,6 @@
 		3311CE8F21A3E5E000156507 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3311CE8E21A3E5E000156507 /* Assets.xcassets */; };
 		3311CE9221A3E5E000156507 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3311CE9021A3E5E000156507 /* LaunchScreen.storyboard */; };
 		3311CE9521A3E5E000156507 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3311CE9421A3E5E000156507 /* main.m */; };
-		3311CEA721A3EB3500156507 /* LWWXTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 3311CEA321A3EB3400156507 /* LWWXTool.m */; };
-		3311CEA821A3EB3500156507 /* UIImage+ResizeImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 3311CEA421A3EB3400156507 /* UIImage+ResizeImage.m */; };
 		363C27B02B7F5395B1C9BBEA /* libPods-LWWXToolDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D820A960C356B199841A4EC7 /* libPods-LWWXToolDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -30,10 +28,6 @@
 		3311CE9121A3E5E000156507 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3311CE9321A3E5E000156507 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3311CE9421A3E5E000156507 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		3311CEA321A3EB3400156507 /* LWWXTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWWXTool.m; sourceTree = "<group>"; };
-		3311CEA421A3EB3400156507 /* UIImage+ResizeImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ResizeImage.m"; sourceTree = "<group>"; };
-		3311CEA521A3EB3400156507 /* LWWXTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWWXTool.h; sourceTree = "<group>"; };
-		3311CEA621A3EB3400156507 /* UIImage+ResizeImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ResizeImage.h"; sourceTree = "<group>"; };
 		B917DE8CB9C8C93D814D2A3D /* Pods-LWWXToolDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LWWXToolDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-LWWXToolDemo/Pods-LWWXToolDemo.release.xcconfig"; sourceTree = "<group>"; };
 		D820A960C356B199841A4EC7 /* libPods-LWWXToolDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LWWXToolDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -71,7 +65,6 @@
 		3311CE8421A3E5DF00156507 /* LWWXToolDemo */ = {
 			isa = PBXGroup;
 			children = (
-				3311CEA121A3EB3400156507 /* LWWXTool */,
 				3311CE8521A3E5DF00156507 /* AppDelegate.h */,
 				3311CE8621A3E5DF00156507 /* AppDelegate.m */,
 				3311CE8821A3E5DF00156507 /* ViewController.h */,
@@ -83,26 +76,6 @@
 				3311CE9421A3E5E000156507 /* main.m */,
 			);
 			path = LWWXToolDemo;
-			sourceTree = "<group>";
-		};
-		3311CEA121A3EB3400156507 /* LWWXTool */ = {
-			isa = PBXGroup;
-			children = (
-				3311CEA221A3EB3400156507 /* Classess */,
-			);
-			name = LWWXTool;
-			path = ../../LWWXTool;
-			sourceTree = "<group>";
-		};
-		3311CEA221A3EB3400156507 /* Classess */ = {
-			isa = PBXGroup;
-			children = (
-				3311CEA521A3EB3400156507 /* LWWXTool.h */,
-				3311CEA321A3EB3400156507 /* LWWXTool.m */,
-				3311CEA621A3EB3400156507 /* UIImage+ResizeImage.h */,
-				3311CEA421A3EB3400156507 /* UIImage+ResizeImage.m */,
-			);
-			path = Classess;
 			sourceTree = "<group>";
 		};
 		617010867A6E714A3A8A8451 /* Frameworks */ = {
@@ -215,10 +188,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3311CE8A21A3E5DF00156507 /* ViewController.m in Sources */,
-				3311CEA721A3EB3500156507 /* LWWXTool.m in Sources */,
 				3311CE9521A3E5E000156507 /* main.m in Sources */,
 				3311CE8721A3E5DF00156507 /* AppDelegate.m in Sources */,
-				3311CEA821A3EB3500156507 /* UIImage+ResizeImage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
