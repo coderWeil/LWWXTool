@@ -21,7 +21,7 @@ typedef NS_ENUM(NSUInteger, LWWXToolType) {
 
 
 typedef void(^LWWXToolCompletionHandler)(LWWXToolType type,_Nullable id value);
-@interface LWWXTool : NSObject
+@interface LWWXTool : NSObject<WXApiDelegate>
 //单例模式
 + (instancetype)sharedManager;
 //微信支付

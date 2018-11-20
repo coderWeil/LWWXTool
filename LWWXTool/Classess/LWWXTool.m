@@ -7,7 +7,7 @@
 //
 
 #import "LWWXTool.h"
-#import <UIImage+ResizeImage.h>
+#import "UIImage+ResizeImage.h"
 
 @interface LWWXTool ()
 @property (nonatomic,copy) LWWXToolCompletionHandler completionHandler;
@@ -51,7 +51,7 @@
 }
 
 
-+ (void)sendAuthRequest:(NSString *)scope state:(NSString *)state openId:(NSString *)openId controller:(UIViewController *)controller completionHandler:(void(^)(LWWXToolType type))completionHandler {
++ (void)sendAuthRequest:(NSString *)scope state:(NSString *)state openId:(NSString *)openId controller:(UIViewController *)controller completionHandler:(LWWXToolCompletionHandler)completionHandler {
     [LWWXTool sharedManager].completionHandler = completionHandler;
     SendAuthReq* req = [[SendAuthReq alloc] init];
     req.scope = scope;
@@ -60,7 +60,7 @@
     [WXApi sendAuthReq:req viewController:controller delegate:[LWWXTool sharedManager]];
 }
 
-+ (void)weixinShare:(NSString *)shareTitle shareDesc:(NSString *)shareDesc shareImage:(UIImage *)shareImage shareLink:(NSString *)shareLink completionHandler:(void(^)(LWWXToolType type))completionHandler {
++ (void)weixinShare:(NSString *)shareTitle shareDesc:(NSString *)shareDesc shareImage:(UIImage *)shareImage shareLink:(NSString *)shareLink completionHandler:(LWWXToolCompletionHandler)completionHandler {
     [LWWXTool sharedManager].completionHandler = completionHandler;
     if (![WXApi isWXAppInstalled]) {
         if (completionHandler) {
@@ -90,7 +90,7 @@
     
 }
 
-+ (void)timelineShare:(NSString *)shareTitle shareDesc:(NSString *)shareDesc shareImage:(UIImage *)shareImage shareLink:(NSString *)shareLink completionHandler:(void(^)(LWWXToolType type))completionHandler {
++ (void)timelineShare:(NSString *)shareTitle shareDesc:(NSString *)shareDesc shareImage:(UIImage *)shareImage shareLink:(NSString *)shareLink completionHandler:(LWWXToolCompletionHandler)completionHandler {
     [LWWXTool sharedManager].completionHandler = completionHandler;
     if (![WXApi isWXAppInstalled]) {
         if (completionHandler) {
@@ -140,17 +140,17 @@
         switch (response.errCode) {
             case 0:
                 if ([LWWXTool sharedManager].completionHandler) {
-                    [LWWXTool sharedManager].completionHandler(LWWXToolTypeSuccess,@(response.errcode));
+                    [LWWXTool sharedManager].completionHandler(LWWXToolTypeSuccess,@(response.errCode));
                 }
                 break;
             case -2:
                 if ([LWWXTool sharedManager].completionHandler) {
-                    [LWWXTool sharedManager].completionHandler(LWWXToolTypeCancel,@(response.errcode));
+                    [LWWXTool sharedManager].completionHandler(LWWXToolTypeCancel,@(response.errCode));
                 }
                 break;
             default:
                 if ([LWWXTool sharedManager].completionHandler) {
-                    [LWWXTool sharedManager].completionHandler(LWWXToolTypeFailure,@(response.errcode));
+                    [LWWXTool sharedManager].completionHandler(LWWXToolTypeFailure,@(response.errCode));
                 }
                 break;
         }
@@ -159,7 +159,7 @@
     if (resp.errCode == 0) {//微信登录
         NSString *wxCode = ((SendAuthResp *)resp).code;
         if ([LWWXTool sharedManager].completionHandler) {
-            [LWWXTool sharedManager].completionHandler(LWWXToolTypeSuccess,@(wxCode));
+            [LWWXTool sharedManager].completionHandler(LWWXToolTypeSuccess,wxCode);
         }
     }else{
         if ([LWWXTool sharedManager].completionHandler) {

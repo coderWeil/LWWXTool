@@ -11,6 +11,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0785FBE2B0F16BBFCA8B5D142C2570B2 /* WechatAuthSDK.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WechatAuthSDK.h; path = WeChatSDK1.8.3/WechatAuthSDK.h; sourceTree = "<group>"; };
 		1D25663E52D4BACE59DDB53A3944ECCF /* Pods-LWWXToolDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LWWXToolDemo.release.xcconfig"; sourceTree = "<group>"; };
 		29714C42934F945D90E04DA072BD2865 /* libPods-LWWXToolDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-LWWXToolDemo.a"; path = "libPods-LWWXToolDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5956F2C952F72C513391A0585A84EE41 /* Pods-LWWXToolDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LWWXToolDemo-frameworks.sh"; sourceTree = "<group>"; };
@@ -19,7 +20,10 @@
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		94B43740B6ECDC2AF4DDC8BF8A33C55A /* Pods-LWWXToolDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LWWXToolDemo-dummy.m"; sourceTree = "<group>"; };
 		B238602955B8306829D71EB2B45887D1 /* Pods-LWWXToolDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LWWXToolDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		DF6F48A794D5A5C6D096B964C6BFE1A7 /* WXApiObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WXApiObject.h; path = WeChatSDK1.8.3/WXApiObject.h; sourceTree = "<group>"; };
 		F1C4A86D6DB3E736B9B975A56E1D1A75 /* Pods-LWWXToolDemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LWWXToolDemo-resources.sh"; sourceTree = "<group>"; };
+		F38E869CA6BEA91EA9BEAF811640E960 /* WXApi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WXApi.h; path = WeChatSDK1.8.3/WXApi.h; sourceTree = "<group>"; };
+		F487EDDE613757E4E7EEE7D2423905A4 /* libWeChatSDK.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libWeChatSDK.a; path = WeChatSDK1.8.3/libWeChatSDK.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,11 +52,20 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		7ADA45F435BB210C822629C0D9B54295 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B37557304B990AF0FE45AB23864CB362 /* WechatOpenSDK */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */,
+				7ADA45F435BB210C822629C0D9B54295 /* Pods */,
 				216EF5FAD31D60939E6DD792D38C8E9C /* Products */,
 				877923FA46388C0DB4A7382AEE06B4C4 /* Targets Support Files */,
 			);
@@ -64,6 +77,26 @@
 				E475A963CCD30A25FBA60FECA9E57775 /* Pods-LWWXToolDemo */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		902D4538E1885C694BF2300B0971350F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F487EDDE613757E4E7EEE7D2423905A4 /* libWeChatSDK.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B37557304B990AF0FE45AB23864CB362 /* WechatOpenSDK */ = {
+			isa = PBXGroup;
+			children = (
+				0785FBE2B0F16BBFCA8B5D142C2570B2 /* WechatAuthSDK.h */,
+				F38E869CA6BEA91EA9BEAF811640E960 /* WXApi.h */,
+				DF6F48A794D5A5C6D096B964C6BFE1A7 /* WXApiObject.h */,
+				902D4538E1885C694BF2300B0971350F /* Frameworks */,
+			);
+			name = WechatOpenSDK;
+			path = WechatOpenSDK;
 			sourceTree = "<group>";
 		};
 		E475A963CCD30A25FBA60FECA9E57775 /* Pods-LWWXToolDemo */ = {
@@ -138,17 +171,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		534B7E1860B8509C5F13B9D41859E1EE /* Debug */ = {
+		0EF69426F8B8A65232A706038AEA5319 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5BAA2FDF7244303368D6833CAA8E0559 /* Pods-LWWXToolDemo.debug.xcconfig */;
+			baseConfigurationReference = 1D25663E52D4BACE59DDB53A3944ECCF /* Pods-LWWXToolDemo.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MACH_O_TYPE = staticlib;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
@@ -157,10 +189,11 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 			};
-			name = Debug;
+			name = Release;
 		};
-		5DC0083F57E9AB706B46C5B5D73B38D8 /* Debug */ = {
+		1EE19F5DD95931924296F637BF18BD8F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -213,7 +246,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -223,17 +256,16 @@
 			};
 			name = Debug;
 		};
-		8F6B6024A9F228DD8D9860C671255D1C /* Release */ = {
+		BE6A94DE6717C3BC663775F56A4FDC04 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1D25663E52D4BACE59DDB53A3944ECCF /* Pods-LWWXToolDemo.release.xcconfig */;
+			baseConfigurationReference = 5BAA2FDF7244303368D6833CAA8E0559 /* Pods-LWWXToolDemo.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MACH_O_TYPE = staticlib;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
@@ -242,11 +274,10 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 			};
-			name = Release;
+			name = Debug;
 		};
-		AEEA80476F98EB645C4DD53EB2BB6D88 /* Release */ = {
+		F4568DEE257655D290C2B9CEAB37C934 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -296,7 +327,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
@@ -310,8 +341,8 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5DC0083F57E9AB706B46C5B5D73B38D8 /* Debug */,
-				AEEA80476F98EB645C4DD53EB2BB6D88 /* Release */,
+				1EE19F5DD95931924296F637BF18BD8F /* Debug */,
+				F4568DEE257655D290C2B9CEAB37C934 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -319,8 +350,8 @@
 		95FBB26B14549D92EAFD0FE1808DBF3F /* Build configuration list for PBXNativeTarget "Pods-LWWXToolDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				534B7E1860B8509C5F13B9D41859E1EE /* Debug */,
-				8F6B6024A9F228DD8D9860C671255D1C /* Release */,
+				BE6A94DE6717C3BC663775F56A4FDC04 /* Debug */,
+				0EF69426F8B8A65232A706038AEA5319 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

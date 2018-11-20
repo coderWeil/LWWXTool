@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "LWWXTool"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "微信小工具"
 
   s.description  = "提供微信登录，注册，支付，分享等功能"
